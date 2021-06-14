@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-dark bg-primary mb-3">
-      <div class="container">
+    <nav className="navbar navbar-dark bg-primary mb-3">
+      <div className="container">
         <Link to="/">WikiCountries</Link>
       </div>
     </nav>
