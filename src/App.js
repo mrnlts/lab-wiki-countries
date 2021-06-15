@@ -5,17 +5,12 @@ import CountriesList from './components/CountriesList/CountriesList';
 import './App.css';
 import './styles/output.css';
 import CountryDetails from './components/CountryDetails/CountryDetails';
-import countriesJson from './countries.json';
 
 class App extends Component{
   constructor(props) {
     super(props)
-    this.state = {countries: '' }
+    this.state = {countries: this.props.countries }
   }
-
-  componentDidMount() {
-  this.setState({countries: countriesJson})
-}
 
   render() {
     const { countries } = this.state;
